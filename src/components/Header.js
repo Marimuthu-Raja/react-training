@@ -13,7 +13,7 @@
 //     )
 //   }
 // }
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 const arr = [{ no: 1 }, { no: 2 }]
 // function Temp(a=10,b=10){
@@ -24,12 +24,12 @@ const arr = [{ no: 1 }, { no: 2 }]
 arr.map((val) => console.log(val))
 
 const filtermyArr = () => {
-  const filterd = arr.filter((val) => val.no != 3)
+  const filterd = arr.filter((val) => val.no !== 3)
   console.log(filterd)
 }
 
 const FindinArr = () => {
-  const found = arr.find((val) => val == 10)
+  const found = arr.find((val) => "10" == 10)
   console.log(found)
 }
 
